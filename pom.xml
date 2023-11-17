@@ -5,7 +5,7 @@
 	<groupId>Rest_assured</groupId>
 	<artifactId>Rest_assured</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<properties>
+ 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -23,11 +23,21 @@
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
+<!-- 			 <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.7.0</version>
+        </plugin> -->
 			</plugins>
 		</pluginManagement>
 	</build>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.20</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 		<dependency>
 			<groupId>io.rest-assured</groupId>
