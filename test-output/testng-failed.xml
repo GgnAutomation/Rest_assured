@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.test.DDtest">
+      <class name="Methods.Parsing_JSON_response_data">
         <methods>
-          <include name="post_test" invocation-numbers="3"/>
-          <include name="delete_data" invocation-numbers="3"/>
+          <include name="get_all_data"/>
         </methods>
-      </class> <!-- api.test.DDtest -->
+      </class> <!-- Methods.Parsing_JSON_response_data -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

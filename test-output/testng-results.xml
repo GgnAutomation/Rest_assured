@@ -1,33 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-16T13:39:21 IST" name="Suite" finished-at="2023-11-16T13:39:31 IST" duration-ms="9913">
+  <suite started-at="2023-11-20T18:01:33 IST" name="Default suite" finished-at="2023-11-20T18:01:34 IST" duration-ms="1800">
     <groups>
     </groups>
-    <test started-at="2023-11-16T13:39:21 IST" name="Test" finished-at="2023-11-16T13:39:31 IST" duration-ms="9913">
-      <class name="api.test.User_test">
-        <test-method is-config="true" signature="setup_data()[pri:0, instance:api.test.User_test@692f203f]" started-at="2023-11-16T13:39:21 IST" name="setup_data" finished-at="2023-11-16T13:39:22 IST" duration-ms="722" status="PASS">
+    <test started-at="2023-11-20T18:01:33 IST" name="Default test" finished-at="2023-11-20T18:01:34 IST" duration-ms="1800">
+      <class name="Methods.OneApp">
+        <test-method signature="oneApp_validate()[pri:0, instance:Methods.OneApp@2b662a77]" started-at="2023-11-20T18:01:33 IST" name="oneApp_validate" finished-at="2023-11-20T18:01:34 IST" duration-ms="1762" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup_data -->
-        <test-method signature="test_Postuser()[pri:0, instance:api.test.User_test@692f203f]" started-at="2023-11-16T13:39:22 IST" name="test_Postuser" finished-at="2023-11-16T13:39:25 IST" duration-ms="3169" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Postuser -->
-        <test-method signature="test_getUser()[pri:1, instance:api.test.User_test@692f203f]" started-at="2023-11-16T13:39:25 IST" name="test_getUser" finished-at="2023-11-16T13:39:26 IST" duration-ms="1466" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_getUser -->
-        <test-method signature="test_updateUser()[pri:2, instance:api.test.User_test@692f203f]" started-at="2023-11-16T13:39:26 IST" name="test_updateUser" finished-at="2023-11-16T13:39:29 IST" duration-ms="2842" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_updateUser -->
-        <test-method signature="test_deleteUser()[pri:3, instance:api.test.User_test@692f203f]" started-at="2023-11-16T13:39:29 IST" name="test_deleteUser" finished-at="2023-11-16T13:39:31 IST" duration-ms="1464" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_deleteUser -->
-      </class> <!-- api.test.User_test -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- oneApp_validate -->
+      </class> <!-- Methods.OneApp -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
