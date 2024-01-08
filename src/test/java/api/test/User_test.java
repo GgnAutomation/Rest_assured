@@ -32,7 +32,7 @@ public class User_test {
 		userpayload.setPhone(faker.phoneNumber().cellPhone());
 		log=LogManager.getLogger("Rest_assured");
 	}
-	@Test(priority = 0)
+//	@Test(priority = 0)
 	public void test_Postuser()
 	{
 		log.info("-------------Send user data in given API------------------ ");
@@ -41,7 +41,7 @@ public class User_test {
 		Assert.assertEquals(response.getStatusCode(), 200);
 		log.info("-------------created user info sucessfully------------------ ");
 	}
-	@Test(priority = 1)
+//	@Test(priority = 1)
 	public void test_getUser()
 	{
 		log.info("-------------Retrive user info for reading only------------------ ");
@@ -51,7 +51,7 @@ public class User_test {
 		log.info("-------------Retrived successfully------------------ ");
 		
 	}
-	@Test(priority = 2)
+//	@Test(priority = 2)
 	public void test_updateUser()
 	{
 		log.info("-------------Updated user info------------------ ");
@@ -67,7 +67,7 @@ public class User_test {
 		responseafterupdate.then().log().all();
 	}
 	
-	@Test(priority = 3)
+//	@Test(priority = 3)
 	public void test_deleteUser()
 	{
 		log.info("-------------Delete user info------------------ ");
@@ -76,5 +76,13 @@ public class User_test {
 		Assert.assertEquals(response.getStatusCode(), 200);
 		log.info("-------------Delete user info successfully------------------ ");
 	}
-
+@Test
+public void read_data()
+{
+	log.info("-------------Body information------------------ ");
+	Response respon=User_Endpoints.read_user_from_oneapp();
+	respon.then().log().all()
+	.statusCode(200);
+	log.info("-------------end------------------ ");
+}
 }

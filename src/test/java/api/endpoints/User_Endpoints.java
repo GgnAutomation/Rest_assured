@@ -46,4 +46,13 @@ public static Response delete_user(String user_name)
 	.delete(Routes.common_url);
 	return response;
 }
+public static Response read_user_from_oneapp()
+{
+	Response response = given()
+//	.pathParam("username", user_name)
+	.when()
+	.get(Routes.Base_url);
+	return response;
+}
+
 }

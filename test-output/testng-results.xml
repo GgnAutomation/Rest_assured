@@ -2,16 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-20T18:01:33 IST" name="Default suite" finished-at="2023-11-20T18:01:34 IST" duration-ms="1800">
+  <suite started-at="2023-11-28T13:50:08 IST" name="Default suite" finished-at="2023-11-28T13:50:10 IST" duration-ms="2251">
     <groups>
     </groups>
-    <test started-at="2023-11-20T18:01:33 IST" name="Default test" finished-at="2023-11-20T18:01:34 IST" duration-ms="1800">
-      <class name="Methods.OneApp">
-        <test-method signature="oneApp_validate()[pri:0, instance:Methods.OneApp@2b662a77]" started-at="2023-11-20T18:01:33 IST" name="oneApp_validate" finished-at="2023-11-20T18:01:34 IST" duration-ms="1762" status="PASS">
+    <test started-at="2023-11-28T13:50:08 IST" name="Default test" finished-at="2023-11-28T13:50:10 IST" duration-ms="2251">
+      <class name="api.test.User_test">
+        <test-method is-config="true" signature="setup_data()[pri:0, instance:api.test.User_test@692f203f]" started-at="2023-11-28T13:50:08 IST" name="setup_data" finished-at="2023-11-28T13:50:09 IST" duration-ms="666" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- oneApp_validate -->
-      </class> <!-- Methods.OneApp -->
+        </test-method> <!-- setup_data -->
+        <test-method signature="read_data()[pri:0, instance:api.test.User_test@692f203f]" started-at="2023-11-28T13:50:09 IST" name="read_data" finished-at="2023-11-28T13:50:10 IST" duration-ms="1548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- read_data -->
+      </class> <!-- api.test.User_test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,8 +1,2 @@
-[INFO ] 2023-11-17 10:02:21.105 [main] Rest_assured - -------------Send user data in given API------------------ 
-[INFO ] 2023-11-17 10:02:24.760 [main] Rest_assured - -------------created user info sucessfully------------------ 
-[INFO ] 2023-11-17 10:02:24.777 [main] Rest_assured - -------------Retrive user info for reading only------------------ 
-[INFO ] 2023-11-17 10:02:26.208 [main] Rest_assured - -------------Retrived successfully------------------ 
-[INFO ] 2023-11-17 10:02:26.210 [main] Rest_assured - -------------Updated user info------------------ 
-[INFO ] 2023-11-17 10:02:27.643 [main] Rest_assured - -------------After Updated user info------------------ 
-[INFO ] 2023-11-17 10:02:29.037 [main] Rest_assured - -------------Delete user info------------------ 
-[INFO ] 2023-11-17 10:02:30.368 [main] Rest_assured - -------------Delete user info successfully------------------ 
+[INFO ] 2023-11-28 13:50:09.092 [main] Rest_assured - -------------Body information------------------ 
+[INFO ] 2023-11-28 13:50:10.632 [main] Rest_assured - -------------end------------------ 
