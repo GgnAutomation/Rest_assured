@@ -1,0 +1,29 @@
+{
+  "PWSESSIONRS": {
+    "PWPROCESSRS": {
+      "PWHEADER": {
+        "IN_PROCESS_ID": "26",
+        "APP_ID": "ONEAPP",
+        "ORG_ID": "ONEAPP",
+        "OUT_PROCESS_ID": "MB_GET_AUTHORISED",
+        "LOGIN_ID": ""
+      },
+      "PWDATA": {
+        "MB_GET_AUTHORISED": {
+          "Row": [
+            {
+            "0": "+91",
+            "1": "7073711241",
+            "2": "123456",
+            "3": "cFQOL53_ikVvoeSiV8_0bm:APA91bEq6rhdQJydIjPLYWWp2qLXwM-fWsXXIFvxs9zJGTuloqw7bOvwqurYGnqrWRj_Y2cSgyJu3ieDgcyG2mf0gtSC_fb-7Lx1f3dYJQgmAZoJmbi9Q3GCa6YwcLUXVxoMBgnqvN0W",
+            "4": "IOS",
+            "5": "15.2",
+            "6": "x86_64"
+            }
+          ]
+        }
+      },
+      "PWERROR": ""
+    }
+  }
+}

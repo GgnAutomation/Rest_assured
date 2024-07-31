@@ -6,13 +6,7 @@
 	</listeners>
   <test  name="Test">
     <classes>
-      <!--class name="Methods.Get_method"/>
-      <class name="Methods.Test_header"/>
-      <class name="Methods.Path_and_Query_Parameter"/>
-       <class name="Methods.Post_Method_diff_way"/>
-      <class name="Methods.TestCookies"/-->
-      <class name="api.test.User_test"/>
-      <!--class name="api.test.DDtest"/-->
+	<class name="api.test.User_test" />
       
     </classes>
   </test> <!-- Test -->

@@ -5,7 +5,7 @@
 	<groupId>Rest_assured</groupId>
 	<artifactId>Rest_assured</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
- 	<properties>
+	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -23,7 +23,7 @@
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
-<!-- 			 <plugin>
+				<!-- 			 <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.7.0</version>
@@ -33,6 +33,13 @@
 	</build>
 
 	<dependencies>
+		<!--
+		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.22.0</version>
+		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>

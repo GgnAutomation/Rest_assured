@@ -15,16 +15,16 @@ public class Get_method {
 	@Test(priority = 0)
 	public void getmethod()
 	{
-		given()
+		String res = given()
 		.when()
-		.get("https://reqres.in/api/users?page=2")
+		.get("https://hero-one-app-uat.azurewebsites.net/api/cloudware_prod?ORG_ID=ONEAPP")
 		.then()
-		.statusCode(200)
-		.body("page",equalTo(2))
-		.log().all();
+		.statusCode(200)	
+		.log().all().extract().asString();
+		System.out.println(res ="");
 		
 	}
-	@Test(priority = 1)
+		@Test(priority = 1)
 	public void post_Method()
 	{
 		HashMap has = new LinkedHashMap();
@@ -32,14 +32,11 @@ public class Get_method {
 		has.put("Employee id =", "845678");
 		has.put("desination =", "Sr. associate");
 		id=given()
-		.contentType("application/json")
+		.contentType("application/json")	
 		.body(has)
 		.when()
 		.post("https://reqres.in/api/users")
 		.jsonPath().getInt("id");
-//		.then()
-//		.statusCode(201)
-//		.log().all();
 	}
 	@Test(dependsOnMethods = "post_Method",priority = 2)
 	public void put_Method()

@@ -1,6 +1,8 @@
 package api.test;
 
 
+import java.io.FileNotFoundException;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -10,79 +12,62 @@ import org.testng.annotations.Test;
 import com.github.javafaker.Faker;
 
 import api.endpoints.User_Endpoints;
-import api.payload.User;
+import api.payload.Payload;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 public class User_test {
-	
-	Faker faker;
-	User userpayload;
 	public Logger log;
 	@BeforeClass
 	public void setup_data()
 	{
-		faker = new Faker();
-		userpayload = new User();
-		userpayload.setId(faker.idNumber().hashCode());
-		userpayload.setUsername(faker.name().username());
-		userpayload.setFirstName(faker.name().firstName());
-		userpayload.setLastName(faker.name().lastName());
-		userpayload.setEmail(faker.internet().safeEmailAddress());
-		userpayload.setPassword(faker.internet().password(5, 12));
-		userpayload.setPhone(faker.phoneNumber().cellPhone());
 		log=LogManager.getLogger("Rest_assured");
 	}
-//	@Test(priority = 0)
-	public void test_Postuser()
+	@Test(priority = 0)
+	public void get_Country_Code()
 	{
-		log.info("-------------Send user data in given API------------------ ");
-		Response response = User_Endpoints.create_user(userpayload);
+		log.info("-------------get Country Code API------------------ ");
+		Response response = User_Endpoints.create_user(Payload.getCountryCode());
 		response.then().log().all();
+		String res = response.body().asString();
+		JsonPath js = new JsonPath(res);
+		String value = js.getString("PWSESSIONRS[0].PWPROCESSRS.PWDATA.oa_getCountryCode.Row[0].countryCode");
+		System.out.println(value);
 		Assert.assertEquals(response.getStatusCode(), 200);
-		log.info("-------------created user info sucessfully------------------ ");
+		log.info("-------------created Country Code API------------------ ");
 	}
-//	@Test(priority = 1)
-	public void test_getUser()
+   	@Test(priority = 1)
+	public void Verify_DMS()
 	{
-		log.info("-------------Retrive user info for reading only------------------ ");
-		Response response = User_Endpoints.read_user(userpayload.getUsername());
+		log.info("-------------Verify DMS------------------ ");
+		Response response = User_Endpoints.create_user(Payload.Verify_dms());
 		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(), 200);
-		log.info("-------------Retrived successfully------------------ ");
+		log.info("-------------Verified successfully------------------ ");
 		
 	}
-//	@Test(priority = 2)
-	public void test_updateUser()
+	@Test(priority = 2)
+	public void Send_OTP()
 	{
-		log.info("-------------Updated user info------------------ ");
-		userpayload.setFirstName(faker.name().firstName());
-		userpayload.setLastName(faker.name().lastName());
-		userpayload.setEmail(faker.internet().safeEmailAddress());
-		userpayload.setPassword(faker.internet().password(5, 12));
-		Response response=User_Endpoints.update_user(this.userpayload.getUsername(), userpayload);
-		response.then().log().body().statusCode(200);
-		Assert.assertEquals(response.getStatusCode(), 200);
-		log.info("-------------After Updated user info------------------ ");
-		Response responseafterupdate=User_Endpoints.update_user(this.userpayload.getUsername(), userpayload);
-		responseafterupdate.then().log().all();
-	}
-	
-//	@Test(priority = 3)
-	public void test_deleteUser()
-	{
-		log.info("-------------Delete user info------------------ ");
-		Response response=User_Endpoints.delete_user(this.userpayload.getUsername());
+		log.info("-------------Send OTP------------------ ");
+		Response response = User_Endpoints.create_user(Payload.Send_otp());
 		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(), 200);
-		log.info("-------------Delete user info successfully------------------ ");
+		log.info("-------------Verified Send OTP------------------ ");
+		
 	}
-@Test
-public void read_data()
-{
-	log.info("-------------Body information------------------ ");
-	Response respon=User_Endpoints.read_user_from_oneapp();
-	respon.then().log().all()
-	.statusCode(200);
-	log.info("-------------end------------------ ");
-}
+	@Test(priority = 3)
+	public void Verify_API() throws FileNotFoundException
+	{
+		log.info("-------------MB_GET_AUTHORIZED------------------ ");
+		String body = Payload.get_APIList("C:\\Users\\Welcome\\git\\Rest_assured\\Test_Data\\GET_AUTHORIZED.json");
+		Response response = User_Endpoints.Send_body(body);
+		response.then().log().all();
+		response.getBody();
+		Assert.assertEquals(response.getStatusCode(), 200);
+		log.info("-------------Verified MB_GET_AUTHORIZED------------------ ");
+		
+	}
+
+
 }

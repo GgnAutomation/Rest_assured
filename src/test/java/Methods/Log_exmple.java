@@ -11,9 +11,9 @@ public class Log_exmple {
 	{
 		given()
 		.when()
-		.get("https://reqres.in/api/users?page=2")
-		.then();
-	//	.log().status();
+		.get("https://hero-one-app-uat.azurewebsites.net/api/cloudware_prod?ORG_ID=ONEAPP")
+		.then()
+		.log().all();
 //		.log().body();
 	//	.log().cookies();
 //		.log().headers();

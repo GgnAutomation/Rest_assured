@@ -1,2 +1,8 @@
-[INFO ] 2023-11-28 13:50:09.092 [main] Rest_assured - -------------Body information------------------ 
-[INFO ] 2023-11-28 13:50:10.632 [main] Rest_assured - -------------end------------------ 
+[INFO ] 2024-07-12 09:33:56.089 [main] Rest_assured - -------------get Country Code API------------------ 
+[INFO ] 2024-07-12 09:33:58.777 [main] Rest_assured - -------------created Country Code API------------------ 
+[INFO ] 2024-07-12 09:33:58.790 [main] Rest_assured - -------------Verify DMS------------------ 
+[INFO ] 2024-07-12 09:34:16.272 [main] Rest_assured - -------------Verified successfully------------------ 
+[INFO ] 2024-07-12 09:34:16.285 [main] Rest_assured - -------------Send OTP------------------ 
+[INFO ] 2024-07-12 09:34:16.515 [main] Rest_assured - -------------Verified Send OTP------------------ 
+[INFO ] 2024-07-12 09:34:16.523 [main] Rest_assured - -------------MB_GET_AUTHORIZED------------------ 
+[INFO ] 2024-07-12 09:34:16.813 [main] Rest_assured - -------------Verified MB_GET_AUTHORIZED------------------ 

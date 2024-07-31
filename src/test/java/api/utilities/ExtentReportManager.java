@@ -30,7 +30,7 @@ public class ExtentReportManager implements ITestListener
     	sparkreport.config().setTheme(Theme.DARK);
     	extent = new ExtentReports();
     	extent.attachReporter(sparkreport);
-    	extent.setSystemInfo("Application", "OneApp");
+    	extent.setSystemInfo("Application", "OneApp API");
     	extent.setSystemInfo("Operating System", System.getProperty("os.name"));
     	extent.setSystemInfo("User name", System.getProperty("User.name"));
     	extent.setSystemInfo("Environemnt", "QA");

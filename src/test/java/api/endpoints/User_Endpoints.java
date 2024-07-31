@@ -3,19 +3,30 @@ import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
-import api.payload.User;
+import api.payload.Payload;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 public class User_Endpoints {
-	public static Response create_user(User payload)
+	public static Response create_user(String payload)
 	{
 		Response response = given()
 		.contentType(ContentType.JSON)
 		.accept(ContentType.JSON)
 		.body(payload)
 		.when()
-		.post(Routes.post_url);
+		.post(Routes.Base_url);
+		
+		return response;
+	}
+	public static Response Send_body(Object payload)
+	{
+		Response response = given()
+		.contentType(ContentType.JSON)
+		.accept(ContentType.JSON)
+		.body(payload)
+		.when()
+		.post(Routes.Base_url);
 		
 		return response;
 	}
@@ -24,10 +35,10 @@ public class User_Endpoints {
 		Response response = given()
 		.pathParam("username", user_name)
 		.when()
-		.get(Routes.common_url);
+		.get(Routes.Base_url);
 		return response;
 	}
-public static Response update_user(String user_name , User payload)
+public static Response update_user(String user_name , Payload payload)
 {
 	 Response response = given()
 	.contentType(ContentType.JSON)
@@ -35,7 +46,7 @@ public static Response update_user(String user_name , User payload)
 	.pathParam("username", user_name)
 	.body(payload)
 	.when()
-	.put(Routes.common_url);
+	.put(Routes.Base_url);
 	 return response;
 }
 public static Response delete_user(String user_name)
@@ -43,15 +54,7 @@ public static Response delete_user(String user_name)
 	Response response=given()
 	.pathParam("username", user_name)
 	.when()
-	.delete(Routes.common_url);
-	return response;
-}
-public static Response read_user_from_oneapp()
-{
-	Response response = given()
-//	.pathParam("username", user_name)
-	.when()
-	.get(Routes.Base_url);
+	.delete(Routes.Base_url);
 	return response;
 }
 
