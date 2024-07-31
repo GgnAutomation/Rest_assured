@@ -9,12 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">21,512</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">6,152</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">api.test.User_test</td><td><a href="#m0">Send_OTP</a></td><td rowspan="1">1720757056281</td><td rowspan="1">235</td></tr><tr class="passedeven"><td><a href="#m1">Verify_API</a></td><td rowspan="1">1720757056521</td><td rowspan="1">294</td></tr><tr class="passedeven"><td><a href="#m2">Verify_DMS</a></td><td rowspan="1">1720757038789</td><td rowspan="1">17483</td></tr><tr class="passedeven"><td><a href="#m3">get_Country_Code</a></td><td rowspan="1">1720757036078</td><td rowspan="1">2699</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">api.test.User_test</td><td><a href="#m0">Send_OTP</a></td><td rowspan="1">1722407281134</td><td rowspan="1">157</td></tr><tr class="failedeven"><td><a href="#m1">Verify_API</a></td><td rowspan="1">1722407281298</td><td rowspan="1">148</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">api.test.User_test</td><td><a href="#m2">Verify_DMS</a></td><td rowspan="1">1722407278632</td><td rowspan="1">2499</td></tr><tr class="passedeven"><td><a href="#m3">get_Country_Code</a></td><td rowspan="1">1722407276231</td><td rowspan="1">2391</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">api.test.User_test#Send_OTP</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">api.test.User_test#Verify_API</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">api.test.User_test#Send_OTP</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [500]
+	at api.test.User_test.Send_OTP(User_test.java:55)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">api.test.User_test#Verify_API</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [500]
+	at api.test.User_test.Verify_API(User_test.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">api.test.User_test#Verify_DMS</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">api.test.User_test#get_Country_Code</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>

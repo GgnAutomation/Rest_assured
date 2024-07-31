@@ -9,6 +9,7 @@
       <class name="api.test.User_test">
         <methods>
           <include name="Verify_API"/>
+          <include name="Send_OTP"/>
           <include name="setup_data"/>
         </methods>
       </class> <!-- api.test.User_test -->
