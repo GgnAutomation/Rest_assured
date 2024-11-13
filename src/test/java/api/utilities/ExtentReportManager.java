@@ -24,7 +24,7 @@ public class ExtentReportManager implements ITestListener
     {
     	String currenttime = new SimpleDateFormat("dd.MM.YYYY.HH.mm.ss").format(new Date());
     	repName = "Test-Report -"+currenttime +".html";
-    	sparkreport = new ExtentSparkReporter(".\\Reports\\" +repName);
+    	sparkreport = new ExtentSparkReporter("./Reports/" +repName);
     	sparkreport.config().setDocumentTitle("RestAssured farmework for API test");
     	sparkreport.config().setReportName("Automation test");
     	sparkreport.config().setTheme(Theme.DARK);

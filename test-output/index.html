@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\Welcome\git\Rest_assured\testng.xml</span>
+                    <span>testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,26 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="api.test.User_test" class="method navigator-link" hash-for-method="Send_OTP">Send_OTP</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="api.test.User_test" class="method navigator-link" hash-for-method="Verify_API">Verify_API</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -122,12 +103,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="api.test.User_test" class="method navigator-link" hash-for-method="Verify_DMS">Verify_DMS</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="api.test.User_test" class="method navigator-link" hash-for-method="get_Country_Code">get_Country_Code</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="api.test.User_test" class="method navigator-link" hash-for-method="Verify_external_login_API">Verify_external_login_API</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -142,38 +118,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">api.test.User_test</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Send_OTP">
-                  </a> <!-- Send_OTP -->
-                  <span class="method-name">Send_OTP</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [500]
-	at api.test.User_test.Send_OTP(User_test.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verify_API">
-                  </a> <!-- Verify_API -->
-                  <span class="method-name">Verify_API</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [500]
-	at api.test.User_test.Verify_API(User_test.java:67)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -182,16 +126,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Verify_DMS">
-                  </a> <!-- Verify_DMS -->
-                  <span class="method-name">Verify_DMS</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="get_Country_Code">
-                  </a> <!-- get_Country_Code -->
-                  <span class="method-name">get_Country_Code</span>
+                  <a name="Verify_external_login_API">
+                  </a> <!-- Verify_external_login_API -->
+                  <span class="method-name">Verify_external_login_API</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -199,7 +136,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Welcome\git\Rest_assured\testng.xml</span>
+            <span class="header-content">/Users/user/git/Rest_assured/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -251,28 +188,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Verify_DMS')
+data.setCell(0, 1, 'Verify_external_login_API')
 data.setCell(0, 2, 'api.test.User_test')
-data.setCell(0, 3, 2499);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'get_Country_Code')
-data.setCell(1, 2, 'api.test.User_test')
-data.setCell(1, 3, 2391);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Send_OTP')
-data.setCell(2, 2, 'api.test.User_test')
-data.setCell(2, 3, 157);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Verify_API')
-data.setCell(3, 2, 'api.test.User_test')
-data.setCell(3, 3, 148);
+data.setCell(0, 3, 2108);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -304,24 +229,8 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">get_Country_Code</span>
-                <span class="method-start">597 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Verify_DMS</span>
-                <span class="method-start">2998 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Send_OTP</span>
-                <span class="method-start">5500 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">Verify_API</span>
-                <span class="method-start">5664 ms</span>
+                <span class="method-name">Verify_external_login_API</span>
+                <span class="method-start">5430 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

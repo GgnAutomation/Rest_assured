@@ -1,6 +1,2 @@
-[INFO ] 2024-07-31 11:57:56.243 [main] Rest_assured - -------------get Country Code API------------------ 
-[INFO ] 2024-07-31 11:57:58.622 [main] Rest_assured - -------------created Country Code API------------------ 
-[INFO ] 2024-07-31 11:57:58.633 [main] Rest_assured - -------------Verify DMS------------------ 
-[INFO ] 2024-07-31 11:58:01.130 [main] Rest_assured - -------------Verified successfully------------------ 
-[INFO ] 2024-07-31 11:58:01.135 [main] Rest_assured - -------------Send OTP------------------ 
-[INFO ] 2024-07-31 11:58:01.301 [main] Rest_assured - -------------MB_GET_AUTHORIZED------------------ 
+[INFO ] 2024-09-16 13:50:45.079 [main] Rest_assured - -------------External_Login_API------------------ 
+[INFO ] 2024-09-16 13:50:47.178 [main] Rest_assured - -------------External Login API Verified------------------ 

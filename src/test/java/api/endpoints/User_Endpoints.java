@@ -3,6 +3,8 @@ import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 
+import java.util.Map;
+
 import api.payload.Payload;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -11,12 +13,11 @@ public class User_Endpoints {
 	public static Response create_user(String payload)
 	{
 		Response response = given()
-		.contentType(ContentType.JSON)
+		.contentType(ContentType.JSON).headers(Payload.headers()).log().headers()
 		.accept(ContentType.JSON)
 		.body(payload)
 		.when()
-		.post(Routes.Base_url);
-		
+		.post("https://hmcl-funapp-dxlint-enterpriseapi-ci-03t.azurewebsites.net/api/externalLogin");
 		return response;
 	}
 	public static Response Send_body(Object payload)

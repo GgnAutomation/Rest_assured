@@ -3,9 +3,14 @@ package api.payload;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.HashMap;
+import java.util.Map;
 
+import static io.restassured.RestAssured.*;
 import org.json.JSONObject;
 import org.json.JSONTokener;
+
+import com.aventstack.extentreports.gherkin.model.Given;
 
 public class Payload {
 	
@@ -104,5 +109,14 @@ public static String get_APIList(String path) throws FileNotFoundException
 	JSONObject data = new JSONObject(jt);
 	String Stringdata = data.toString();
 	return Stringdata;
+}
+public static  Map<String, String> headers()
+{
+	Map<String, String > header = new HashMap<String, String>();
+	header.put("appid","External");
+	header.put("ocp-apim-subscription-key","31110036a520491dacc8a96ee18aaa61");
+	header.put("specificAppId","Harley");
+	
+	return header;
 }
 }
